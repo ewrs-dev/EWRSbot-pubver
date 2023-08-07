@@ -1,0 +1,8 @@
+{
+    "token": "BOTのトークン",
+    "version": "v1",
+    "beta": "false",
+    "logch": "ログに使うチャンネル",
+    "clientId": "Botのclientid",
+    "serverId": "コマンド登録のためのサーバーID"
+}
