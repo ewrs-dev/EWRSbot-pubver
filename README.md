@@ -1,0 +1,2 @@
+# EWRSbot-pubver
+EWRSBotのパブリックバージョンです。
