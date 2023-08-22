@@ -80,6 +80,14 @@ client.on('ready', () => {
   }
 });
 
+ client.on('guildMemberAdd', member => {
+	  console.log(`${member.guild.name} に ${member.displayName} が参加しました`)
+ })
+ 
+ client.on('guildMemberRemove', member => {
+	  console.log(`${member.guild.name} から ${member.displayName} が退出しました`)
+ })
+
 client.commands = new Collection();
 
 const commandsPath = path.join(__dirname, 'commands');
