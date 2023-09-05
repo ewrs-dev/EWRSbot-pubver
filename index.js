@@ -1,3 +1,6 @@
+```
+©EWRS DEVELOPER TEAM 2023
+```
 const { Client, EmbedBuilder, GatewayIntentBits, channelLink, ModalBuilder, TextInputBuilder, ActionRowBuilder, TextInputStyle, Collection, TextInputComponent } = require('discord.js');
 const { token, version, beta, logch } = require('./config/general.json');
 const fs = require('node:fs');
