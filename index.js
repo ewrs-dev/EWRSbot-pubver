@@ -64,6 +64,18 @@ client.on('messageCreate', message => {
 });
 	
 
+client.on('message', message=>{
+
+  if (message.author.bot) return;
+
+  if (message.content.match(/おはよう/)) {
+
+    message.channel.send("おはようございます" + message.author.name + "さん！");
+
+  }
+
+});
+
 
 client.on('messageCreate', message => {
   if (message.content === "!help") {
