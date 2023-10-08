@@ -80,8 +80,12 @@ client.on('message', message=>{
 client.on('messageCreate', message => {
   if (message.content === "!help") {
 	channel.reply("!ch <チャンネルID> <内容>");    
-}});
+}})
 
+client.on('messageCreate', message => {
+  if (message.content === "!ping") {
+	channel.reply( "Ping:" + client.ws.ping );
+  }})
 client.login(token)
 client.on('ready', () => {
   if (beta) {
