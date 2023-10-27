@@ -22,7 +22,7 @@ module.exports = {
             const embed = new EmbedBuilder()
                 .setColor(0x46646E)
                 .setTitle('熱中症警戒アラート文作成機')
-                .setDescription("■熱中症警戒アラート■\n" + "以下の地域では熱中症警戒アラートが発表されています。\n" + "特に対象地域では警戒を強めてください\n" + "対象地域:" + taisyotiiki + "\n水分・塩分補給を怠らず、喉が渇いていなくても水分補給を行いましょう。" + "\n情報データ：気象庁")
+                .setDescription("■熱中症警戒アラート■\n" + "以下の地域では熱中症警戒アラートが発表されています。\n" + "特に対象地域では警戒を強めてください\n" + "対象地域:" + taisyotiiki + "\n水分・塩分補給を怠らず、喉が渇いていなくても水分補給を行ってください。" + "\n情報データ：気象庁")
                 .setFooter({
     		        text: "EWRSbot - Public Version",
   	  	        })
