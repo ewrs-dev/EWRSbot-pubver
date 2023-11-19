@@ -48,33 +48,10 @@ client.on('messageCreate', message => {
     const channel = client.channels.cache.get(channelid);
     const authorName = message.author.username;
     channel.send(content);
-    const embed = new EmbedBuilder()
-  		.setAuthor({
-    		name: authorName,
- 		 })
-  		.setTitle("<#" + channelid + ">")
-  		.setDescription(content)
-  		.setColor("#0047ee")
-  		.setFooter({
-    		text: "EWRSbot - public version",
-  		})
-  		.setTimestamp();
-	client.channels.cache.get(logch).send({ embeds: [embed] });
- 	 }
+  }
 });
 	
 
-client.on('message', message=>{
-
-  if (message.author.bot) return;
-
-  if (message.content.match(/おはよう/)) {
-
-    message.channel.send("おはようございます" + message.author.name + "さん！");
-
-  }
-
-});
 
 
 client.on('messageCreate', message => {
